@@ -167,6 +167,7 @@
             BtnAra.TabIndex = 4;
             BtnAra.Text = "Ara";
             BtnAra.UseVisualStyleBackColor = true;
+            BtnAra.Click += BtnAra_Click;
             // 
             // label10
             // 

@@ -115,14 +115,41 @@ namespace HotelOtoSystem
         private void BtnGuncelle_Click(object sender, EventArgs e)
         {
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("update MusteriEkle set Adi= '"+txtAdi.Text+"',Soyadi='"+txtSoyadi.Text+"'," +
-                "Cinsiyet='"+comboBox1.Text+"',Telefon='"+MskTxtTelefon.Text + "',Mail = '"+txtMail.Text+"',TC='"+txtKimlikNo.Text+"'," +
-                "OdaNo= '"+TxtOdaNo.Text+"',Ucret= '"+txtUcret.Text+ "'  where Musteriid=" + id+"",baglanti );
-                /*,GirisTarihi= '"+DtpGirisTarihi.Value.ToString("yyyy,MM,dd")+"',CikisTarihi='"+DtpCikisTarihi.Value.ToString("yyyy,MM,dd")*/
+            SqlCommand komut = new SqlCommand("update MusteriEkle set Adi= '" + txtAdi.Text + "',Soyadi='" + txtSoyadi.Text + "'," +
+                "Cinsiyet='" + comboBox1.Text + "',Telefon='" + MskTxtTelefon.Text + "',Mail = '" + txtMail.Text + "',TC='" + txtKimlikNo.Text + "'," +
+                "OdaNo= '" + TxtOdaNo.Text + "',Ucret= '" + txtUcret.Text + "'  where Musteriid=" + id + "", baglanti);
+            /*,GirisTarihi= '"+DtpGirisTarihi.Value.ToString("yyyy,MM,dd")+"',CikisTarihi='"+DtpCikisTarihi.Value.ToString("yyyy,MM,dd")*/
             komut.ExecuteNonQuery();
             baglanti.Close();
             verilerigoster();
 
+        }
+
+        private void BtnAra_Click(object sender, EventArgs e)
+        {
+            listView1.Items.Clear();
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("select * from MusteriEkle where Adi like '%"+textBox1.Text+"%'", baglanti);
+            SqlDataReader oku = komut.ExecuteReader();
+
+            while (oku.Read())
+            {
+                ListViewItem ekle = new ListViewItem();
+                ekle.Text = oku["Musteriid"].ToString();
+                ekle.SubItems.Add(oku["Adi"].ToString());
+                ekle.SubItems.Add(oku["Soyadi"].ToString());
+                ekle.SubItems.Add(oku["Cinsiyet"].ToString());
+                ekle.SubItems.Add(oku["Telefon"].ToString());
+                ekle.SubItems.Add(oku["Mail"].ToString());
+                ekle.SubItems.Add(oku["TC"].ToString());
+                ekle.SubItems.Add(oku["OdaNo"].ToString());
+                ekle.SubItems.Add(oku["Ucret"].ToString());
+                ekle.SubItems.Add(oku["GirisTarihi"].ToString());
+                ekle.SubItems.Add(oku["CikisTarihi"].ToString());
+
+                listView1.Items.Add(ekle);
+            }
+            baglanti.Close();
         }
     }
 }

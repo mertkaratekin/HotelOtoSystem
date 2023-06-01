@@ -142,6 +142,7 @@
             Controls.Add(BtnOda101);
             Name = "FrmOdalar";
             Text = "Odalar";
+            Load += FrmOdalar_Load;
             ResumeLayout(false);
         }
 
