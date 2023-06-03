@@ -128,6 +128,7 @@
             MinimizeBox = false;
             Name = "FrmAdminGiris";
             Text = " ";
+            Load += FrmAdminGiris_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

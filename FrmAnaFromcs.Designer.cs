@@ -116,6 +116,7 @@
             button6.TabIndex = 5;
             button6.Text = "Stoklar";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -127,6 +128,7 @@
             button7.TabIndex = 6;
             button7.Text = "Müşteri Mesajları";
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
@@ -138,6 +140,7 @@
             button8.TabIndex = 7;
             button8.Text = "Radyo Dinle";
             button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
             // button9
             // 
@@ -185,6 +188,7 @@
             button10.TabIndex = 11;
             button10.Text = "Hava Durumu";
             button10.UseVisualStyleBackColor = false;
+            button10.Click += button10_Click;
             // 
             // button11
             // 
@@ -208,6 +212,7 @@
             button12.TabIndex = 13;
             button12.Text = "Gazeteler";
             button12.UseVisualStyleBackColor = false;
+            button12.Click += button12_Click;
             // 
             // FrmAnaFromcs
             // 

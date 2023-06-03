@@ -426,6 +426,7 @@
             MinimizeBox = false;
             Name = "FrmMusteriler";
             Text = " Müşteri Bilgileri";
+            Load += FrmMusteriler_Load;
             ResumeLayout(false);
             PerformLayout();
         }

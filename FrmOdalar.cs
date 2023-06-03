@@ -18,7 +18,7 @@ namespace HotelOtoSystem
         {
             InitializeComponent();
         }
-        SqlConnection baglanti = new SqlConnection(@"Server=(localdb)\mssqllocaldb;Database=MuratYucedagKampDatabase;Trusted_Connection=true");
+        SqlConnection baglanti = new SqlConnection(@"Server=(localdb)\mssqllocaldb;Database=HotelDatabase;Trusted_Connection=true");
 
 
         //private void BtnOda106_Click(object sender, EventArgs e)

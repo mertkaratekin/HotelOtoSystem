@@ -193,6 +193,7 @@
             Controls.Add(label1);
             Name = "FrmGelirGider";
             Text = "FrmGelirGider";
+            Load += FrmGelirGider_Load;
             ResumeLayout(false);
             PerformLayout();
         }

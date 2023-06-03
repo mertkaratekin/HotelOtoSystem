@@ -9,7 +9,7 @@ namespace HotelOtoSystem
         {
             InitializeComponent();
         }
-        SqlConnection baglanti = new SqlConnection(@"Server=(localdb)\mssqllocaldb;Database=MuratYucedagKampDatabase;Trusted_Connection=true");
+        SqlConnection baglanti = new SqlConnection(@"Server=(localdb)\mssqllocaldb;Database=HotelDatabase;Trusted_Connection=true");
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -28,8 +28,8 @@ namespace HotelOtoSystem
                 baglanti.Open();
                 string sql = "select *from AdminGiris where Kullanici = @Kullaniciadi AND Sifre =@Sifresi";
                 SqlParameter prm1 = new SqlParameter("Kullaniciadi", TxtKullaniciAdi.Text.Trim());
-                SqlParameter prm2 = new SqlParameter("Sifresi",TxtSifre.Text.Trim());
-                SqlCommand komut = new SqlCommand(sql,baglanti);
+                SqlParameter prm2 = new SqlParameter("Sifresi", TxtSifre.Text.Trim());
+                SqlCommand komut = new SqlCommand(sql, baglanti);
                 komut.Parameters.Add(prm1);
                 komut.Parameters.Add(prm2);
 
@@ -45,11 +45,15 @@ namespace HotelOtoSystem
                     this.Hide();
                 }
             }
-            catch(Exception) 
+            catch (Exception)
             {
                 MessageBox.Show("Hatali Giris");
             }
         }
 
+        private void FrmAdminGiris_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

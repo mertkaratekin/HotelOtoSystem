@@ -12,35 +12,37 @@ using System.Data.SqlClient;
 
 namespace HotelOtoSystem
 {
-    public partial class FrmGelirGider : Form
+    public partial class FrmStoklar : Form
     {
-        public FrmGelirGider()
+        public FrmStoklar()
         {
             InitializeComponent();
         }
         SqlConnection baglanti = new SqlConnection(@"Server=(localdb)\mssqllocaldb;Database=HotelDatabase;Trusted_Connection=true");
-
-
-        private void button1_Click(object sender, EventArgs e)
+        private void veriler()
         {
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("select sum(Ucret) as toplam from MusteriEkle", baglanti);
+            SqlCommand komut = new SqlCommand("select * from Stoklar", baglanti);
             SqlDataReader oku = komut.ExecuteReader();
-
             while (oku.Read())
             {
-                LblKasaToplam.Text = oku["toplam"].ToString();
+                ListViewItem ekle = new ListViewItem();
+                ekle.Text = oku["Gida"].ToString();
+                ekle.SubItems.Add(oku["Icecek"].ToString());
+                ekle.SubItems.Add(oku["Cerezler"].ToString());
+                listView1.Items.Add(ekle);
             }
             baglanti.Close();
 
-            int personel;
-            personel = Convert.ToInt16(textBox1.Text);
-            LblPersonelMaas.Text = (personel * 1500).ToString(); 
         }
 
-        private void FrmGelirGider_Load(object sender, EventArgs e)
+        private void BtnKaydet_Click(object sender, EventArgs e)
         {
+        }
 
+        private void FrmStoklar_Load(object sender, EventArgs e)
+        {
+            veriler();
         }
     }
 }

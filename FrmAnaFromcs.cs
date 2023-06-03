@@ -36,7 +36,7 @@ namespace HotelOtoSystem
         {
             FrmOdalar fr = new FrmOdalar();
             fr.Show();
-            this.Hide();
+            //this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -70,8 +70,34 @@ namespace HotelOtoSystem
 
         private void button5_Click(object sender, EventArgs e)
         {
-            FrmGelirGider fr = new FrmGelirGider();    
+            FrmGelirGider fr = new FrmGelirGider();
             fr.Show();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            FrmStoklar fr = new FrmStoklar();
+            fr.Show();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

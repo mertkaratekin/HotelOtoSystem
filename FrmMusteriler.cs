@@ -17,7 +17,7 @@ namespace HotelOtoSystem
         {
             InitializeComponent();
         }
-        SqlConnection baglanti = new SqlConnection(@"Server=(localdb)\mssqllocaldb;Database=MuratYucedagKampDatabase;Trusted_Connection=true");
+        SqlConnection baglanti = new SqlConnection(@"Server=(localdb)\mssqllocaldb;Database=HotelDatabase;Trusted_Connection=true");
 
         private void verilerigoster()
         {
@@ -188,7 +188,7 @@ namespace HotelOtoSystem
         {
             listView1.Items.Clear();
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("select * from MusteriEkle where Adi like '%"+textBox1.Text+"%'", baglanti);
+            SqlCommand komut = new SqlCommand("select * from MusteriEkle where Adi like '%" + textBox1.Text + "%'", baglanti);
             SqlDataReader oku = komut.ExecuteReader();
 
             while (oku.Read())
@@ -209,6 +209,11 @@ namespace HotelOtoSystem
                 listView1.Items.Add(ekle);
             }
             baglanti.Close();
+        }
+
+        private void FrmMusteriler_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
