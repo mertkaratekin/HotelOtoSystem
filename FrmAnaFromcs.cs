@@ -23,14 +23,13 @@ namespace HotelOtoSystem
             FrmAdminGiris fr = new FrmAdminGiris();
             fr.Show();
             this.Hide();
-
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             FrmYeniMusteri fr = new FrmYeniMusteri();
             fr.Show();
-            this.Hide();
+            //this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -51,6 +50,28 @@ namespace HotelOtoSystem
         private void button9_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Otel Otomasyon Sistemi / 2023 / Bursa");
+        }
+
+        private void FrmAnaFromcs_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Text = DateTime.Now.ToLongDateString();
+            label2.Text = DateTime.Now.ToLongTimeString();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            FrmGelirGider fr = new FrmGelirGider();    
+            fr.Show();
         }
     }
 }

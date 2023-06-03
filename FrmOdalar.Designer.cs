@@ -130,6 +130,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.Cyan;
             ClientSize = new Size(800, 450);
             Controls.Add(BtnOda105);
@@ -140,6 +141,8 @@
             Controls.Add(BtnOda102);
             Controls.Add(BtnOda104);
             Controls.Add(BtnOda101);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "FrmOdalar";
             Text = "Odalar";
             Load += FrmOdalar_Load;

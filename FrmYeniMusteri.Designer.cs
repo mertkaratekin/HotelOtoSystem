@@ -459,13 +459,14 @@
             MinimizeBox = false;
             Name = "FrmYeniMusteri";
             Text = "YeniMusteri Ekle";
+            Load += FrmYeniMusteri_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
-        
+
 
         #endregion
 

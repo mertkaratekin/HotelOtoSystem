@@ -34,15 +34,15 @@ namespace HotelOtoSystem
         private void FrmOdalar_Load(object sender, EventArgs e)
         {
             baglanti.Open();
-            SqlCommand komut1 = new SqlCommand("select * from Oda101",baglanti);
+            SqlCommand komut1 = new SqlCommand("select * from Oda101", baglanti);
             SqlDataReader oku1 = komut1.ExecuteReader();
 
             while (oku1.Read())
             {
-                BtnOda101.Text = oku1["Adi"].ToString() +" "+ oku1["Soyadi"].ToString();
+                BtnOda101.Text = oku1["Adi"].ToString() + " " + oku1["Soyadi"].ToString();
             }
             baglanti.Close();
-            if(BtnOda101.Text != "101")
+            if (BtnOda101.Text != "101")
             {
                 BtnOda101.BackColor = Color.Red;
             }
@@ -74,7 +74,7 @@ namespace HotelOtoSystem
             {
                 BtnOda103.BackColor = Color.Red;
             }
-            
+
             baglanti.Open();
             SqlCommand komut4 = new SqlCommand("select * from Oda104", baglanti);
             SqlDataReader oku4 = komut4.ExecuteReader();
