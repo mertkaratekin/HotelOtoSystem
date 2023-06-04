@@ -97,6 +97,12 @@ namespace HotelOtoSystem
 
         private void button8_Click(object sender, EventArgs e)
         {
+            FrmOtelGoruntu fr = new FrmOtelGoruntu();
+            fr.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }

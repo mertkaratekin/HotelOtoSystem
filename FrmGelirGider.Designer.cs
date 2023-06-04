@@ -33,14 +33,19 @@
             label3 = new Label();
             label4 = new Label();
             LblPersonelMaas = new Label();
-            LblAlinanUrunler = new Label();
+            LblAlinanUrunler1 = new Label();
             label7 = new Label();
-            LblFaturalar = new Label();
+            LblFaturalar1 = new Label();
             textBox1 = new TextBox();
             label9 = new Label();
             button1 = new Button();
             label10 = new Label();
             label11 = new Label();
+            LblAlinanUrunler3 = new Label();
+            LblAlinanUrunler2 = new Label();
+            LblSonuc = new Label();
+            LblFaturalar2 = new Label();
+            LblFaturalar3 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -57,6 +62,7 @@
             // 
             LblKasaToplam.AutoSize = true;
             LblKasaToplam.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            LblKasaToplam.ForeColor = Color.White;
             LblKasaToplam.Location = new Point(260, 24);
             LblKasaToplam.Name = "LblKasaToplam";
             LblKasaToplam.Size = new Size(30, 24);
@@ -87,21 +93,23 @@
             // 
             LblPersonelMaas.AutoSize = true;
             LblPersonelMaas.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            LblPersonelMaas.ForeColor = Color.White;
             LblPersonelMaas.Location = new Point(260, 68);
             LblPersonelMaas.Name = "LblPersonelMaas";
             LblPersonelMaas.Size = new Size(30, 24);
             LblPersonelMaas.TabIndex = 4;
             LblPersonelMaas.Text = "00";
             // 
-            // LblAlinanUrunler
+            // LblAlinanUrunler1
             // 
-            LblAlinanUrunler.AutoSize = true;
-            LblAlinanUrunler.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            LblAlinanUrunler.Location = new Point(260, 111);
-            LblAlinanUrunler.Name = "LblAlinanUrunler";
-            LblAlinanUrunler.Size = new Size(30, 24);
-            LblAlinanUrunler.TabIndex = 5;
-            LblAlinanUrunler.Text = "00";
+            LblAlinanUrunler1.AutoSize = true;
+            LblAlinanUrunler1.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            LblAlinanUrunler1.ForeColor = Color.White;
+            LblAlinanUrunler1.Location = new Point(260, 111);
+            LblAlinanUrunler1.Name = "LblAlinanUrunler1";
+            LblAlinanUrunler1.Size = new Size(30, 24);
+            LblAlinanUrunler1.TabIndex = 5;
+            LblAlinanUrunler1.Text = "00";
             // 
             // label7
             // 
@@ -113,15 +121,16 @@
             label7.TabIndex = 6;
             label7.Text = "Fatura Giderleri:";
             // 
-            // LblFaturalar
+            // LblFaturalar1
             // 
-            LblFaturalar.AutoSize = true;
-            LblFaturalar.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            LblFaturalar.Location = new Point(260, 156);
-            LblFaturalar.Name = "LblFaturalar";
-            LblFaturalar.Size = new Size(30, 24);
-            LblFaturalar.TabIndex = 7;
-            LblFaturalar.Text = "00";
+            LblFaturalar1.AutoSize = true;
+            LblFaturalar1.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            LblFaturalar1.ForeColor = Color.White;
+            LblFaturalar1.Location = new Point(260, 156);
+            LblFaturalar1.Name = "LblFaturalar1";
+            LblFaturalar1.Size = new Size(30, 24);
+            LblFaturalar1.TabIndex = 7;
+            LblFaturalar1.Text = "00";
             // 
             // textBox1
             // 
@@ -144,7 +153,7 @@
             // button1
             // 
             button1.Font = new Font("Calibri", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(549, 175);
+            button1.Location = new Point(537, 254);
             button1.Name = "button1";
             button1.Size = new Size(157, 29);
             button1.TabIndex = 10;
@@ -156,7 +165,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(12, 259);
+            label10.Location = new Point(188, 255);
             label10.Name = "label10";
             label10.Size = new Size(66, 24);
             label10.TabIndex = 11;
@@ -172,27 +181,90 @@
             label11.TabIndex = 12;
             label11.Text = "--------------------------------------------------------------------------------------------------------------------";
             // 
+            // LblAlinanUrunler3
+            // 
+            LblAlinanUrunler3.AutoSize = true;
+            LblAlinanUrunler3.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            LblAlinanUrunler3.ForeColor = Color.White;
+            LblAlinanUrunler3.Location = new Point(381, 111);
+            LblAlinanUrunler3.Name = "LblAlinanUrunler3";
+            LblAlinanUrunler3.Size = new Size(30, 24);
+            LblAlinanUrunler3.TabIndex = 13;
+            LblAlinanUrunler3.Text = "00";
+            // 
+            // LblAlinanUrunler2
+            // 
+            LblAlinanUrunler2.AutoSize = true;
+            LblAlinanUrunler2.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            LblAlinanUrunler2.ForeColor = Color.White;
+            LblAlinanUrunler2.Location = new Point(324, 111);
+            LblAlinanUrunler2.Name = "LblAlinanUrunler2";
+            LblAlinanUrunler2.Size = new Size(30, 24);
+            LblAlinanUrunler2.TabIndex = 14;
+            LblAlinanUrunler2.Text = "00";
+            // 
+            // LblSonuc
+            // 
+            LblSonuc.AutoSize = true;
+            LblSonuc.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            LblSonuc.ForeColor = Color.White;
+            LblSonuc.Location = new Point(260, 255);
+            LblSonuc.Name = "LblSonuc";
+            LblSonuc.Size = new Size(30, 24);
+            LblSonuc.TabIndex = 15;
+            LblSonuc.Text = "00";
+            // 
+            // LblFaturalar2
+            // 
+            LblFaturalar2.AutoSize = true;
+            LblFaturalar2.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            LblFaturalar2.ForeColor = Color.White;
+            LblFaturalar2.Location = new Point(324, 156);
+            LblFaturalar2.Name = "LblFaturalar2";
+            LblFaturalar2.Size = new Size(30, 24);
+            LblFaturalar2.TabIndex = 16;
+            LblFaturalar2.Text = "00";
+            // 
+            // LblFaturalar3
+            // 
+            LblFaturalar3.AutoSize = true;
+            LblFaturalar3.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            LblFaturalar3.ForeColor = Color.White;
+            LblFaturalar3.Location = new Point(381, 156);
+            LblFaturalar3.Name = "LblFaturalar3";
+            LblFaturalar3.Size = new Size(30, 24);
+            LblFaturalar3.TabIndex = 17;
+            LblFaturalar3.Text = "00";
+            // 
             // FrmGelirGider
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.FromArgb(255, 128, 128);
             ClientSize = new Size(800, 450);
+            Controls.Add(LblFaturalar3);
+            Controls.Add(LblFaturalar2);
+            Controls.Add(LblSonuc);
+            Controls.Add(LblAlinanUrunler2);
+            Controls.Add(LblAlinanUrunler3);
             Controls.Add(label11);
             Controls.Add(label10);
             Controls.Add(button1);
             Controls.Add(label9);
             Controls.Add(textBox1);
-            Controls.Add(LblFaturalar);
+            Controls.Add(LblFaturalar1);
             Controls.Add(label7);
-            Controls.Add(LblAlinanUrunler);
+            Controls.Add(LblAlinanUrunler1);
             Controls.Add(LblPersonelMaas);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(LblKasaToplam);
             Controls.Add(label1);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "FrmGelirGider";
-            Text = "FrmGelirGider";
+            Text = "Gelir & Gider";
             Load += FrmGelirGider_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -205,13 +277,18 @@
         private Label label3;
         private Label label4;
         private Label LblPersonelMaas;
-        private Label LblAlinanUrunler;
+        private Label LblAlinanUrunler1;
         private Label label7;
-        private Label LblFaturalar;
+        private Label LblFaturalar1;
         private TextBox textBox1;
         private Label label9;
         private Button button1;
         private Label label10;
         private Label label11;
+        private Label LblAlinanUrunler3;
+        private Label LblAlinanUrunler2;
+        private Label LblSonuc;
+        private Label LblFaturalar2;
+        private Label LblFaturalar3;
     }
 }

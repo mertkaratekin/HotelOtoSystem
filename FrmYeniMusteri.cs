@@ -198,7 +198,7 @@ namespace HotelOtoSystem
             TimeSpan Sonuc = buyukTarih - kucukTarih;
 
             label11.Text = Sonuc.TotalDays.ToString();
-            Ucret = Convert.ToInt32(label11.Text) * 50;
+            Ucret = Convert.ToInt32(label11.Text) * 300;
             txtUcret.Text = Ucret.ToString();
         }
 
