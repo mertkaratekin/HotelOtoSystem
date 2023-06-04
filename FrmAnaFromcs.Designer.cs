@@ -334,9 +334,9 @@
             label12.Font = new Font("Arial Black", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label12.Location = new Point(683, 59);
             label12.Name = "label12";
-            label12.Size = new Size(258, 28);
+            label12.Size = new Size(274, 28);
             label12.TabIndex = 24;
-            label12.Text = "MFS OTEL SİSTEMİNE ";
+            label12.Text = "MAFS OTEL SİSTEMİNE ";
             // 
             // label13
             // 
@@ -354,7 +354,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            BackColor = Color.Maroon;
+            BackColor = Color.FromArgb(192, 0, 0);
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(953, 511);
             Controls.Add(label13);

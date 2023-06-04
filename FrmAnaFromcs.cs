@@ -92,6 +92,8 @@ namespace HotelOtoSystem
 
         private void button7_Click(object sender, EventArgs e)
         {
+            FrmMesajlar fr = new FrmMesajlar();
+            fr.Show();
 
         }
 

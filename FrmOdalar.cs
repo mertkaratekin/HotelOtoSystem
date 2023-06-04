@@ -142,5 +142,10 @@ namespace HotelOtoSystem
                 BtnOda108.BackColor = Color.Red;
             }
         }
+
+        private void BtnOda106_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -43,7 +43,7 @@
             // 
             l.AutoSize = true;
             l.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            l.Location = new Point(12, 218);
+            l.Location = new Point(476, 193);
             l.Name = "l";
             l.Size = new Size(140, 28);
             l.TabIndex = 0;
@@ -53,7 +53,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(82, 280);
+            label2.Location = new Point(546, 245);
             label2.Name = "label2";
             label2.Size = new Size(70, 28);
             label2.TabIndex = 1;
@@ -62,18 +62,18 @@
             // 
             // TxtKullaniciAdi
             // 
-            TxtKullaniciAdi.BackColor = Color.FromArgb(255, 255, 192);
+            TxtKullaniciAdi.BackColor = Color.White;
             TxtKullaniciAdi.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtKullaniciAdi.Location = new Point(158, 218);
+            TxtKullaniciAdi.Location = new Point(622, 191);
             TxtKullaniciAdi.Name = "TxtKullaniciAdi";
             TxtKullaniciAdi.Size = new Size(166, 30);
             TxtKullaniciAdi.TabIndex = 2;
             // 
             // TxtSifre
             // 
-            TxtSifre.BackColor = Color.FromArgb(255, 255, 192);
+            TxtSifre.BackColor = Color.White;
             TxtSifre.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtSifre.Location = new Point(158, 280);
+            TxtSifre.Location = new Point(622, 243);
             TxtSifre.Name = "TxtSifre";
             TxtSifre.Size = new Size(166, 30);
             TxtSifre.TabIndex = 3;
@@ -81,29 +81,35 @@
             // 
             // BtnGirisYap
             // 
+            BtnGirisYap.BackColor = Color.Transparent;
             BtnGirisYap.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnGirisYap.Location = new Point(125, 336);
+            BtnGirisYap.Location = new Point(522, 400);
             BtnGirisYap.Name = "BtnGirisYap";
             BtnGirisYap.Size = new Size(158, 29);
             BtnGirisYap.TabIndex = 4;
             BtnGirisYap.Text = "Giriş Yap";
-            BtnGirisYap.UseVisualStyleBackColor = true;
+            BtnGirisYap.UseVisualStyleBackColor = false;
             BtnGirisYap.Click += BtnGirisYap_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.Location = new Point(373, 20);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(-5, -1);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(304, 345);
+            pictureBox1.Size = new Size(475, 455);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Black;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(12, 83);
+            label1.ForeColor = Color.Red;
+            label1.Location = new Point(57, 18);
             label1.Name = "label1";
             label1.Size = new Size(358, 41);
             label1.TabIndex = 6;
@@ -115,7 +121,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            BackColor = Color.Aqua;
+            BackColor = Color.FromArgb(192, 0, 0);
             ClientSize = new Size(800, 450);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
@@ -127,7 +133,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FrmAdminGiris";
-            Text = " ";
+            Text = " Admin Giriş";
             Load += FrmAdminGiris_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

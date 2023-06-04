@@ -47,7 +47,7 @@
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
-            pictureBox1.Location = new Point(293, 12);
+            pictureBox1.Location = new Point(344, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(263, 236);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -57,7 +57,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(293, 257);
+            pictureBox2.Location = new Point(344, 257);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(261, 236);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -67,7 +67,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(572, 257);
+            pictureBox3.Location = new Point(652, 257);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(263, 236);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -77,7 +77,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(572, 12);
+            pictureBox4.Location = new Point(652, 12);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(263, 236);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -87,7 +87,7 @@
             // pictureBox6
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(12, 12);
+            pictureBox6.Location = new Point(32, 12);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(263, 236);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -97,7 +97,7 @@
             // pictureBox12
             // 
             pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
-            pictureBox12.Location = new Point(12, 257);
+            pictureBox12.Location = new Point(32, 257);
             pictureBox12.Name = "pictureBox12";
             pictureBox12.Size = new Size(263, 236);
             pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -108,7 +108,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(858, 505);
+            BackColor = Color.FromArgb(192, 0, 0);
+            ClientSize = new Size(953, 513);
             Controls.Add(pictureBox12);
             Controls.Add(pictureBox6);
             Controls.Add(pictureBox4);

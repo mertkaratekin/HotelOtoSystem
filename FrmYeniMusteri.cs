@@ -106,7 +106,7 @@ namespace HotelOtoSystem
             //MessageBox.Show("Suite Oda ");
             TxtOdaNo.Text = "101";
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("insert into Oda101 (Adi,Soyadi) values ('"+txtAdi.Text+"','"+txtSoyadi.Text+"')",baglanti);
+            SqlCommand komut = new SqlCommand("insert into Oda101 (Adi,Soyadi) values ('" + txtAdi.Text + "','" + txtSoyadi.Text + "')", baglanti);
             komut.ExecuteNonQuery();
             baglanti.Close();
         }
