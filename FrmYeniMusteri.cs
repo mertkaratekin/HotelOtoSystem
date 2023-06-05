@@ -354,7 +354,7 @@ namespace HotelOtoSystem
         {
             TxtOdaNo.Text = "102";
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("insert into Oda1012 (Adi,Soyadi) values ('" + txtAdi.Text + "','" + txtSoyadi.Text + "')", baglanti);
+            SqlCommand komut = new SqlCommand("insert into Oda102 (Adi,Soyadi) values ('" + txtAdi.Text + "','" + txtSoyadi.Text + "')", baglanti);
             komut.ExecuteNonQuery();
             baglanti.Close();
         }

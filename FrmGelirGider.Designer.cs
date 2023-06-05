@@ -55,7 +55,6 @@
             label13 = new Label();
             label15 = new Label();
             pictureBox3 = new PictureBox();
-            label14 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
@@ -297,7 +296,6 @@
             label12.Size = new Size(69, 28);
             label12.TabIndex = 23;
             label12.Text = "İçecek";
-            label12.Click += label12_Click;
             // 
             // label13
             // 
@@ -329,17 +327,6 @@
             pictureBox3.TabIndex = 31;
             pictureBox3.TabStop = false;
             // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label14.Location = new Point(677, 20);
-            label14.Name = "label14";
-            label14.Size = new Size(272, 38);
-            label14.TabIndex = 32;
-            label14.Text = "Muhasebe İşlemleri";
-            label14.Click += label14_Click;
-            // 
             // FrmGelirGider
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -347,7 +334,6 @@
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.FromArgb(192, 0, 0);
             ClientSize = new Size(951, 519);
-            Controls.Add(label14);
             Controls.Add(pictureBox3);
             Controls.Add(label15);
             Controls.Add(label13);
@@ -412,6 +398,5 @@
         private Label label13;
         private Label label15;
         private PictureBox pictureBox3;
-        private Label label14;
     }
 }

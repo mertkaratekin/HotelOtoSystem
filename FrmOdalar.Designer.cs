@@ -78,7 +78,6 @@
             BtnOda106.TabIndex = 14;
             BtnOda106.Text = "106";
             BtnOda106.UseVisualStyleBackColor = false;
-            //BtnOda106.Click += BtnOda106_Click;
             // 
             // BtnOda107
             // 
