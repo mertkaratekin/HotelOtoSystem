@@ -19,18 +19,7 @@ namespace HotelOtoSystem
             InitializeComponent();
         }
         SqlConnection baglanti = new SqlConnection(@"Server=(localdb)\mssqllocaldb;Database=HotelDatabase;Trusted_Connection=true");
-
-
-        //private void BtnOda106_Click(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void BtnOda103_Click(object sender, EventArgs e)
-        //{
-
-        //}
-
+        
         private void FrmOdalar_Load(object sender, EventArgs e)
         {
             baglanti.Open();
@@ -141,11 +130,6 @@ namespace HotelOtoSystem
             {
                 BtnOda108.BackColor = Color.Red;
             }
-        }
-
-        private void BtnOda106_Click(object sender, EventArgs e)
-        {
-
-        }
+        }   
     }
 }

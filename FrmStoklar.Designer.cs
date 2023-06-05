@@ -106,6 +106,7 @@
             groupBox1.TabIndex = 8;
             groupBox1.TabStop = false;
             groupBox1.Text = "Mutfak";
+            groupBox1.Enter += groupBox1_Enter;
             // 
             // label8
             // 
@@ -137,6 +138,7 @@
             BtnKaydet.Size = new Size(76, 52);
             BtnKaydet.TabIndex = 21;
             BtnKaydet.UseVisualStyleBackColor = true;
+            BtnKaydet.Click += BtnKaydet_Click_1;
             // 
             // TxtAtistirmaliklar
             // 

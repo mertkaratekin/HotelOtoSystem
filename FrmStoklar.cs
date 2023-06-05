@@ -53,14 +53,14 @@ namespace HotelOtoSystem
             baglanti.Close();
 
         }
-        private void BtnKaydet_Click(object sender, EventArgs e)
+        /*private void BtnKaydet_Click(object sender, EventArgs e)
         {
             baglanti.Open();
             SqlCommand komut = new SqlCommand("insert into Stoklar(Gida, Icecek, Cerezler) values ('" + TxtGidalar.Text + "','" + TxtIcecekler.Text + "','" + TxtAtistirmaliklar.Text + "')", baglanti);
             komut.ExecuteNonQuery();
             baglanti.Close();
             veriler();
-        }
+        }*/
 
         private void FrmStoklar_Load(object sender, EventArgs e)
         {
@@ -75,6 +75,20 @@ namespace HotelOtoSystem
             komut2.ExecuteNonQuery();
             baglanti.Close();
             veriler2();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnKaydet_Click_1(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Stoklar(Gida, Icecek, Cerezler) values ('" + TxtGidalar.Text + "','" + TxtIcecekler.Text + "','" + TxtAtistirmaliklar.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+            veriler();
         }
     }
 }

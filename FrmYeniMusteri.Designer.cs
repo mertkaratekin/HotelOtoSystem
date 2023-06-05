@@ -53,21 +53,19 @@
             label2 = new Label();
             label1 = new Label();
             groupBox2 = new GroupBox();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            BtnOda105 = new Button();
-            BtnOda106 = new Button();
-            BtnOda107 = new Button();
             BtnOda108 = new Button();
+            BtnOda107 = new Button();
+            BtnOda106 = new Button();
+            BtnOda105 = new Button();
+            BtnOda104 = new Button();
             BtnOda103 = new Button();
             BtnOda102 = new Button();
-            BtnOda104 = new Button();
             BtnOda101 = new Button();
             BtnBosOda = new Button();
             BtnDoluOda = new Button();
+            pictureBox1 = new PictureBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -322,151 +320,117 @@
             // 
             // groupBox2
             // 
-            groupBox2.BackColor = SystemColors.InactiveCaption;
-            groupBox2.Controls.Add(pictureBox2);
+            groupBox2.BackColor = Color.Transparent;
             groupBox2.Controls.Add(pictureBox1);
-            groupBox2.Controls.Add(BtnOda105);
-            groupBox2.Controls.Add(BtnOda106);
-            groupBox2.Controls.Add(BtnOda107);
             groupBox2.Controls.Add(BtnOda108);
+            groupBox2.Controls.Add(BtnOda107);
+            groupBox2.Controls.Add(BtnOda106);
+            groupBox2.Controls.Add(BtnOda105);
+            groupBox2.Controls.Add(BtnOda104);
             groupBox2.Controls.Add(BtnOda103);
             groupBox2.Controls.Add(BtnOda102);
-            groupBox2.Controls.Add(BtnOda104);
             groupBox2.Controls.Add(BtnOda101);
             groupBox2.Location = new Point(477, 2);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(466, 450);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(195, 201);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(110, 62);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 9;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(56, 201);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(110, 62);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 8;
-            pictureBox1.TabStop = false;
-            // 
-            // BtnOda105
-            // 
-            BtnOda105.BackColor = Color.Black;
-            BtnOda105.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnOda105.ForeColor = Color.White;
-            BtnOda105.Location = new Point(56, 289);
-            BtnOda105.Name = "BtnOda105";
-            BtnOda105.Size = new Size(110, 50);
-            BtnOda105.TabIndex = 7;
-            BtnOda105.Text = "Oda 105";
-            BtnOda105.UseVisualStyleBackColor = false;
-            BtnOda105.Click += BtnOda105_Click;
-            // 
-            // BtnOda106
-            // 
-            BtnOda106.BackColor = Color.Black;
-            BtnOda106.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnOda106.ForeColor = Color.White;
-            BtnOda106.Location = new Point(197, 289);
-            BtnOda106.Name = "BtnOda106";
-            BtnOda106.Size = new Size(108, 50);
-            BtnOda106.TabIndex = 6;
-            BtnOda106.Text = "Oda 106";
-            BtnOda106.UseVisualStyleBackColor = false;
-            BtnOda106.Click += BtnOda106_Click;
-            // 
-            // BtnOda107
-            // 
-            BtnOda107.BackColor = Color.Black;
-            BtnOda107.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnOda107.ForeColor = Color.White;
-            BtnOda107.Location = new Point(56, 382);
-            BtnOda107.Name = "BtnOda107";
-            BtnOda107.Size = new Size(110, 48);
-            BtnOda107.TabIndex = 5;
-            BtnOda107.Text = "Oda 107";
-            BtnOda107.UseVisualStyleBackColor = false;
-            BtnOda107.Click += BtnOda107_Click;
+            groupBox2.Text = "Odalar";
+            groupBox2.Enter += groupBox2_Enter;
             // 
             // BtnOda108
             // 
-            BtnOda108.BackColor = Color.Black;
-            BtnOda108.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnOda108.ForeColor = Color.White;
-            BtnOda108.Location = new Point(197, 382);
+            BtnOda108.BackColor = Color.Lime;
+            BtnOda108.Location = new Point(184, 273);
             BtnOda108.Name = "BtnOda108";
-            BtnOda108.Size = new Size(108, 48);
-            BtnOda108.TabIndex = 4;
-            BtnOda108.Text = "Oda 108";
+            BtnOda108.Size = new Size(112, 54);
+            BtnOda108.TabIndex = 7;
+            BtnOda108.Text = "108";
             BtnOda108.UseVisualStyleBackColor = false;
             BtnOda108.Click += BtnOda108_Click;
             // 
+            // BtnOda107
+            // 
+            BtnOda107.BackColor = Color.Lime;
+            BtnOda107.Location = new Point(33, 273);
+            BtnOda107.Name = "BtnOda107";
+            BtnOda107.Size = new Size(112, 54);
+            BtnOda107.TabIndex = 6;
+            BtnOda107.Text = "107";
+            BtnOda107.UseVisualStyleBackColor = false;
+            BtnOda107.Click += BtnOda107_Click;
+            // 
+            // BtnOda106
+            // 
+            BtnOda106.BackColor = Color.Lime;
+            BtnOda106.Location = new Point(184, 199);
+            BtnOda106.Name = "BtnOda106";
+            BtnOda106.Size = new Size(112, 54);
+            BtnOda106.TabIndex = 5;
+            BtnOda106.Text = "106";
+            BtnOda106.UseVisualStyleBackColor = false;
+            BtnOda106.Click += BtnOda106_Click;
+            // 
+            // BtnOda105
+            // 
+            BtnOda105.BackColor = Color.Lime;
+            BtnOda105.Location = new Point(33, 199);
+            BtnOda105.Name = "BtnOda105";
+            BtnOda105.Size = new Size(112, 54);
+            BtnOda105.TabIndex = 4;
+            BtnOda105.Text = "105";
+            BtnOda105.UseVisualStyleBackColor = false;
+            BtnOda105.Click += BtnOda105_Click;
+            // 
+            // BtnOda104
+            // 
+            BtnOda104.BackColor = Color.Lime;
+            BtnOda104.Location = new Point(184, 115);
+            BtnOda104.Name = "BtnOda104";
+            BtnOda104.Size = new Size(112, 54);
+            BtnOda104.TabIndex = 3;
+            BtnOda104.Text = "104";
+            BtnOda104.UseVisualStyleBackColor = false;
+            BtnOda104.Click += BtnOda104_Click;
+            // 
             // BtnOda103
             // 
-            BtnOda103.BackColor = Color.Black;
-            BtnOda103.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnOda103.ForeColor = Color.White;
-            BtnOda103.Location = new Point(56, 120);
+            BtnOda103.BackColor = Color.Lime;
+            BtnOda103.Location = new Point(33, 115);
             BtnOda103.Name = "BtnOda103";
-            BtnOda103.Size = new Size(110, 53);
-            BtnOda103.TabIndex = 3;
-            BtnOda103.Text = "Oda 103";
+            BtnOda103.Size = new Size(112, 54);
+            BtnOda103.TabIndex = 2;
+            BtnOda103.Text = "103";
             BtnOda103.UseVisualStyleBackColor = false;
             BtnOda103.Click += BtnOda103_Click;
             // 
             // BtnOda102
             // 
-            BtnOda102.BackColor = Color.Black;
-            BtnOda102.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnOda102.ForeColor = Color.White;
-            BtnOda102.Location = new Point(197, 26);
+            BtnOda102.BackColor = Color.Lime;
+            BtnOda102.Location = new Point(184, 39);
             BtnOda102.Name = "BtnOda102";
-            BtnOda102.Size = new Size(108, 53);
-            BtnOda102.TabIndex = 2;
-            BtnOda102.Text = "Oda 102";
+            BtnOda102.Size = new Size(112, 55);
+            BtnOda102.TabIndex = 1;
+            BtnOda102.Text = "102";
             BtnOda102.UseVisualStyleBackColor = false;
             BtnOda102.Click += BtnOda102_Click;
             // 
-            // BtnOda104
-            // 
-            BtnOda104.BackColor = Color.Black;
-            BtnOda104.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnOda104.ForeColor = Color.White;
-            BtnOda104.Location = new Point(197, 120);
-            BtnOda104.Name = "BtnOda104";
-            BtnOda104.Size = new Size(108, 53);
-            BtnOda104.TabIndex = 1;
-            BtnOda104.Text = "Oda 104";
-            BtnOda104.UseVisualStyleBackColor = false;
-            BtnOda104.Click += BtnOda104_Click;
-            // 
             // BtnOda101
             // 
-            BtnOda101.BackColor = Color.Black;
-            BtnOda101.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnOda101.ForeColor = Color.White;
-            BtnOda101.Location = new Point(56, 26);
+            BtnOda101.BackColor = Color.Lime;
+            BtnOda101.Location = new Point(33, 39);
             BtnOda101.Name = "BtnOda101";
-            BtnOda101.Size = new Size(110, 53);
+            BtnOda101.Size = new Size(112, 55);
             BtnOda101.TabIndex = 0;
-            BtnOda101.Text = "Oda 101";
+            BtnOda101.Text = "101";
             BtnOda101.UseVisualStyleBackColor = false;
             BtnOda101.Click += BtnOda101_Click;
             // 
             // BtnBosOda
             // 
-            BtnBosOda.BackColor = Color.GreenYellow;
+            BtnBosOda.BackColor = Color.Lime;
             BtnBosOda.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnBosOda.ForeColor = Color.Black;
             BtnBosOda.Location = new Point(625, 458);
             BtnBosOda.Name = "BtnBosOda";
             BtnBosOda.Size = new Size(73, 47);
@@ -487,6 +451,16 @@
             BtnDoluOda.UseVisualStyleBackColor = false;
             BtnDoluOda.Click += BtnDoluOda_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(323, 359);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(137, 76);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
+            // 
             // FrmYeniMusteri
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -506,7 +480,6 @@
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
@@ -536,20 +509,19 @@
         private GroupBox groupBox2;
         private Button BtnDoluOda;
         private Button BtnBosOda;
-        private Button BtnOda105;
-        private Button BtnOda106;
-        private Button BtnOda107;
-        private Button BtnOda108;
-        private Button BtnOda103;
-        private Button BtnOda102;
-        private Button BtnOda104;
-        private Button BtnOda101;
         private TextBox txtUcret;
         private Label label9;
         private Label label10;
         private ComboBox comboBox1;
         private Label label11;
-        private PictureBox pictureBox2;
+        private Button BtnOda108;
+        private Button BtnOda107;
+        private Button BtnOda106;
+        private Button BtnOda105;
+        private Button BtnOda104;
+        private Button BtnOda103;
+        private Button BtnOda102;
+        private Button BtnOda101;
         private PictureBox pictureBox1;
     }
 }

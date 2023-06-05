@@ -57,100 +57,101 @@
             // 
             // BtnOda105
             // 
-            BtnOda105.BackColor = Color.White;
+            BtnOda105.BackColor = Color.Lime;
             BtnOda105.BackgroundImageLayout = ImageLayout.Stretch;
             BtnOda105.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             BtnOda105.Location = new Point(74, 366);
             BtnOda105.Name = "BtnOda105";
             BtnOda105.Size = new Size(156, 53);
             BtnOda105.TabIndex = 15;
-            BtnOda105.Text = "Oda 105";
+            BtnOda105.Text = "105";
             BtnOda105.UseVisualStyleBackColor = false;
             // 
             // BtnOda106
             // 
-            BtnOda106.BackColor = Color.White;
+            BtnOda106.BackColor = Color.Lime;
             BtnOda106.BackgroundImageLayout = ImageLayout.Stretch;
             BtnOda106.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             BtnOda106.Location = new Point(254, 366);
             BtnOda106.Name = "BtnOda106";
             BtnOda106.Size = new Size(156, 53);
             BtnOda106.TabIndex = 14;
-            BtnOda106.Text = "Oda 106";
+            BtnOda106.Text = "106";
             BtnOda106.UseVisualStyleBackColor = false;
-            BtnOda106.Click += BtnOda106_Click;
+            //BtnOda106.Click += BtnOda106_Click;
             // 
             // BtnOda107
             // 
-            BtnOda107.BackColor = Color.White;
+            BtnOda107.BackColor = Color.Lime;
             BtnOda107.BackgroundImageLayout = ImageLayout.Stretch;
             BtnOda107.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             BtnOda107.Location = new Point(443, 366);
             BtnOda107.Name = "BtnOda107";
             BtnOda107.Size = new Size(161, 53);
             BtnOda107.TabIndex = 13;
-            BtnOda107.Text = "Oda 107";
+            BtnOda107.Text = "107";
             BtnOda107.UseVisualStyleBackColor = false;
             // 
             // BtnOda108
             // 
-            BtnOda108.BackColor = Color.White;
+            BtnOda108.BackColor = Color.Lime;
             BtnOda108.BackgroundImageLayout = ImageLayout.Stretch;
             BtnOda108.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             BtnOda108.Location = new Point(637, 366);
             BtnOda108.Name = "BtnOda108";
             BtnOda108.Size = new Size(156, 53);
             BtnOda108.TabIndex = 12;
-            BtnOda108.Text = "Oda 108";
+            BtnOda108.Text = "108";
             BtnOda108.UseVisualStyleBackColor = false;
             // 
             // BtnOda103
             // 
-            BtnOda103.BackColor = Color.White;
+            BtnOda103.BackColor = Color.Lime;
             BtnOda103.BackgroundImageLayout = ImageLayout.Stretch;
             BtnOda103.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             BtnOda103.Location = new Point(439, 136);
             BtnOda103.Name = "BtnOda103";
             BtnOda103.Size = new Size(156, 53);
             BtnOda103.TabIndex = 11;
-            BtnOda103.Text = "Oda 103";
+            BtnOda103.Text = "103";
             BtnOda103.UseVisualStyleBackColor = false;
             // 
             // BtnOda102
             // 
-            BtnOda102.BackColor = Color.White;
+            BtnOda102.BackColor = Color.Lime;
             BtnOda102.BackgroundImageLayout = ImageLayout.Stretch;
             BtnOda102.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             BtnOda102.Location = new Point(257, 136);
             BtnOda102.Name = "BtnOda102";
             BtnOda102.Size = new Size(153, 53);
             BtnOda102.TabIndex = 10;
-            BtnOda102.Text = "Oda 102";
+            BtnOda102.Text = "102";
             BtnOda102.UseVisualStyleBackColor = false;
             // 
             // BtnOda104
             // 
-            BtnOda104.BackColor = Color.White;
+            BtnOda104.BackColor = Color.Lime;
             BtnOda104.BackgroundImageLayout = ImageLayout.Stretch;
             BtnOda104.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             BtnOda104.Location = new Point(627, 136);
             BtnOda104.Name = "BtnOda104";
             BtnOda104.Size = new Size(156, 53);
             BtnOda104.TabIndex = 9;
-            BtnOda104.Text = "Oda 104";
+            BtnOda104.Text = "104";
             BtnOda104.UseVisualStyleBackColor = false;
             // 
             // BtnOda101
             // 
-            BtnOda101.BackColor = Color.White;
+            BtnOda101.BackColor = Color.Lime;
             BtnOda101.BackgroundImageLayout = ImageLayout.Stretch;
             BtnOda101.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             BtnOda101.Location = new Point(74, 136);
             BtnOda101.Name = "BtnOda101";
             BtnOda101.Size = new Size(156, 53);
             BtnOda101.TabIndex = 8;
-            BtnOda101.Text = "Oda 101";
+            BtnOda101.Text = "101";
             BtnOda101.UseVisualStyleBackColor = false;
+            //BtnOda101.Click += BtnOda101_Click;
             // 
             // pictureBox1
             // 
