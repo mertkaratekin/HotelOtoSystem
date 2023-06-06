@@ -116,7 +116,10 @@ namespace HotelOtoSystem
             baglanti.Close();
         }
 
+        private void LblKasaToplam_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
 

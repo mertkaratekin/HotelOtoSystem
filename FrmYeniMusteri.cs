@@ -459,7 +459,8 @@ namespace HotelOtoSystem
 
             while (oku1.Read())
             {
-                BtnOda101.Text = oku1["Adi"].ToString() + " " + oku1["Soyadi"].ToString();
+                BtnOda101.Text = "101\nDolu";
+               // BtnOda101.Text = oku1["Adi"].ToString() + " " + oku1["Soyadi"].ToString();
             }
             baglanti.Close();
             if (BtnOda101.Text != "101")
@@ -474,7 +475,9 @@ namespace HotelOtoSystem
 
             while (oku2.Read())
             {
-                BtnOda102.Text = oku2["Adi"].ToString() + " " + oku2["Soyadi"].ToString();
+                BtnOda102.Text = "102\nDolu";
+
+                //BtnOda102.Text = oku2["Adi"].ToString() + " " + oku2["Soyadi"].ToString();
             }
             baglanti.Close();
             if (BtnOda102.Text != "102")
@@ -489,7 +492,9 @@ namespace HotelOtoSystem
 
             while (oku3.Read())
             {
-                BtnOda103.Text = oku3["Adi"].ToString() + " " + oku3["Soyadi"].ToString();
+                BtnOda103.Text = "103\nDolu";
+
+                //BtnOda103.Text = oku3["Adi"].ToString() + " " + oku3["Soyadi"].ToString();
             }
             baglanti.Close();
             if (BtnOda103.Text != "103")
@@ -505,7 +510,9 @@ namespace HotelOtoSystem
 
             while (oku4.Read())
             {
-                BtnOda104.Text = oku4["Adi"].ToString() + " " + oku4["Soyadi"].ToString();
+                BtnOda104.Text = "104\nDolu";
+
+                //BtnOda104.Text = oku4["Adi"].ToString() + " " + oku4["Soyadi"].ToString();
             }
             baglanti.Close();
             if (BtnOda104.Text != "104")
@@ -520,7 +527,9 @@ namespace HotelOtoSystem
 
             while (oku5.Read())
             {
-                BtnOda105.Text = oku5["Adi"].ToString() + " " + oku5["Soyadi"].ToString();
+                BtnOda105.Text = "105\nDolu";
+
+                //BtnOda105.Text = oku5["Adi"].ToString() + " " + oku5["Soyadi"].ToString();
             }
             baglanti.Close();
             if (BtnOda105.Text != "105")
@@ -534,7 +543,9 @@ namespace HotelOtoSystem
 
             while (oku6.Read())
             {
-                BtnOda106.Text = oku6["Adi"].ToString() + " " + oku6["Soyadi"].ToString();
+                BtnOda106.Text = "106\nDolu";
+
+                //BtnOda106.Text = oku6["Adi"].ToString() + " " + oku6["Soyadi"].ToString();
             }
             baglanti.Close();
             if (BtnOda106.Text != "106")
@@ -548,7 +559,9 @@ namespace HotelOtoSystem
 
             while (oku7.Read())
             {
-                BtnOda107.Text = oku7["Adi"].ToString() + " " + oku7["Soyadi"].ToString();
+                BtnOda107.Text = "107\nDolu";
+
+                //BtnOda107.Text = oku7["Adi"].ToString() + " " + oku7["Soyadi"].ToString();
             }
             baglanti.Close();
             if (BtnOda107.Text != "107")
@@ -562,7 +575,9 @@ namespace HotelOtoSystem
 
             while (oku8.Read())
             {
-                BtnOda108.Text = oku8["Adi"].ToString() + " " + oku8["Soyadi"].ToString();
+                BtnOda108.Text = "108\nDolu";
+
+                //BtnOda108.Text = oku8["Adi"].ToString() + " " + oku8["Soyadi"].ToString();
             }
             baglanti.Close();
             if (BtnOda108.Text != "108")

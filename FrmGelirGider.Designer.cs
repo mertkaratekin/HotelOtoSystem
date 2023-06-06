@@ -53,7 +53,6 @@
             label8 = new Label();
             label12 = new Label();
             label13 = new Label();
-            label15 = new Label();
             pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
@@ -78,6 +77,7 @@
             LblKasaToplam.Size = new Size(30, 24);
             LblKasaToplam.TabIndex = 1;
             LblKasaToplam.Text = "00";
+            LblKasaToplam.Click += LblKasaToplam_Click;
             // 
             // label3
             // 
@@ -162,13 +162,13 @@
             // 
             // button1
             // 
-            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
             button1.BackgroundImageLayout = ImageLayout.Zoom;
-            button1.Font = new Font("Calibri", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(825, 377);
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(825, 410);
             button1.Name = "button1";
-            button1.Size = new Size(103, 75);
+            button1.Size = new Size(103, 42);
             button1.TabIndex = 10;
+            button1.Text = "Hesapla";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -307,16 +307,6 @@
             label13.TabIndex = 24;
             label13.Text = "Çerez";
             // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label15.Location = new Point(834, 455);
-            label15.Name = "label15";
-            label15.Size = new Size(84, 28);
-            label15.TabIndex = 28;
-            label15.Text = "Hesapla";
-            // 
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
@@ -335,7 +325,6 @@
             BackColor = Color.FromArgb(192, 0, 0);
             ClientSize = new Size(951, 519);
             Controls.Add(pictureBox3);
-            Controls.Add(label15);
             Controls.Add(label13);
             Controls.Add(label12);
             Controls.Add(label8);
@@ -363,6 +352,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FrmGelirGider";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Gelir & Gider";
             Load += FrmGelirGider_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -396,7 +386,6 @@
         private Label label8;
         private Label label12;
         private Label label13;
-        private Label label15;
         private PictureBox pictureBox3;
     }
 }

@@ -132,6 +132,9 @@ namespace HotelOtoSystem
             }
         }
 
-        
+        private void BtnOda101_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

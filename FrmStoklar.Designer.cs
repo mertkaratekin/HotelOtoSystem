@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.StartPosition = FormStartPosition.CenterScreen;
+
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmStoklar));
             listView1 = new ListView();
             columnHeader1 = new ColumnHeader();
             columnHeader2 = new ColumnHeader();
             columnHeader3 = new ColumnHeader();
             groupBox1 = new GroupBox();
-            label8 = new Label();
             pictureBox1 = new PictureBox();
             BtnKaydet = new Button();
             TxtAtistirmaliklar = new TextBox();
@@ -45,7 +46,6 @@
             label1 = new Label();
             groupBox2 = new GroupBox();
             pictureBox2 = new PictureBox();
-            label7 = new Label();
             listView2 = new ListView();
             columnHeader4 = new ColumnHeader();
             columnHeader5 = new ColumnHeader();
@@ -68,7 +68,7 @@
             listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3 });
             listView1.Location = new Point(0, 299);
             listView1.Name = "listView1";
-            listView1.Size = new Size(468, 211);
+            listView1.Size = new Size(474, 211);
             listView1.TabIndex = 7;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
@@ -90,7 +90,6 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(label8);
             groupBox1.Controls.Add(pictureBox1);
             groupBox1.Controls.Add(BtnKaydet);
             groupBox1.Controls.Add(TxtAtistirmaliklar);
@@ -108,16 +107,6 @@
             groupBox1.Text = "Mutfak";
             groupBox1.Enter += groupBox1_Enter;
             // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(356, 251);
-            label8.Name = "label8";
-            label8.Size = new Size(78, 28);
-            label8.TabIndex = 24;
-            label8.Text = "Kaydet";
-            // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
@@ -130,13 +119,13 @@
             // 
             // BtnKaydet
             // 
-            BtnKaydet.BackgroundImage = (Image)resources.GetObject("BtnKaydet.BackgroundImage");
             BtnKaydet.BackgroundImageLayout = ImageLayout.Stretch;
             BtnKaydet.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnKaydet.Location = new Point(358, 196);
+            BtnKaydet.Location = new Point(293, 194);
             BtnKaydet.Name = "BtnKaydet";
-            BtnKaydet.Size = new Size(76, 52);
+            BtnKaydet.Size = new Size(76, 33);
             BtnKaydet.TabIndex = 21;
+            BtnKaydet.Text = "Kaydet";
             BtnKaydet.UseVisualStyleBackColor = true;
             BtnKaydet.Click += BtnKaydet_Click_1;
             // 
@@ -197,7 +186,6 @@
             // groupBox2
             // 
             groupBox2.Controls.Add(pictureBox2);
-            groupBox2.Controls.Add(label7);
             groupBox2.Controls.Add(listView2);
             groupBox2.Controls.Add(BtnKaydet2);
             groupBox2.Controls.Add(TxtInternet);
@@ -215,6 +203,7 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(37, 194);
             pictureBox2.Name = "pictureBox2";
@@ -222,16 +211,6 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 25;
             pictureBox2.TabStop = false;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(347, 249);
-            label7.Name = "label7";
-            label7.Size = new Size(78, 28);
-            label7.TabIndex = 25;
-            label7.Text = "Kaydet";
             // 
             // listView2
             // 
@@ -260,13 +239,13 @@
             // 
             // BtnKaydet2
             // 
-            BtnKaydet2.BackgroundImage = (Image)resources.GetObject("BtnKaydet2.BackgroundImage");
             BtnKaydet2.BackgroundImageLayout = ImageLayout.Stretch;
             BtnKaydet2.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnKaydet2.Location = new Point(347, 194);
+            BtnKaydet2.Location = new Point(294, 194);
             BtnKaydet2.Name = "BtnKaydet2";
-            BtnKaydet2.Size = new Size(78, 52);
+            BtnKaydet2.Size = new Size(78, 33);
             BtnKaydet2.TabIndex = 35;
+            BtnKaydet2.Text = "Kaydet";
             BtnKaydet2.UseVisualStyleBackColor = true;
             BtnKaydet2.Click += BtnKaydet2_Click;
             // 
@@ -373,8 +352,6 @@
         private ColumnHeader columnHeader5;
         private ColumnHeader columnHeader6;
         private PictureBox pictureBox1;
-        private Label label8;
         private PictureBox pictureBox2;
-        private Label label7;
     }
 }

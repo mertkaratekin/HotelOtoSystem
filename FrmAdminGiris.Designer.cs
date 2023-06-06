@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAdminGiris));
             l = new Label();
             label2 = new Label();
@@ -36,6 +37,7 @@
             BtnGirisYap = new Button();
             pictureBox1 = new PictureBox();
             label1 = new Label();
+            contextMenuStrip1 = new ContextMenuStrip(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -116,6 +118,13 @@
             label1.Text = "Otel Otomasyon Sistemi";
             label1.Click += label1_Click_1;
             // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.ImageScalingSize = new Size(20, 20);
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(61, 4);
+            contextMenuStrip1.Opening += contextMenuStrip1_Opening;
+            // 
             // FrmAdminGiris
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -133,6 +142,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FrmAdminGiris";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = " Admin Giriş";
             Load += FrmAdminGiris_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -149,5 +159,6 @@
         private Button BtnGirisYap;
         private PictureBox pictureBox1;
         private Label label1;
+        private ContextMenuStrip contextMenuStrip1;
     }
 }

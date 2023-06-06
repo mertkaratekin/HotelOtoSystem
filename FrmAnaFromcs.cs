@@ -29,7 +29,7 @@ namespace HotelOtoSystem
         {
             FrmYeniMusteri fr = new FrmYeniMusteri();
             fr.Show();
-            //this.Hide();
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -46,12 +46,12 @@ namespace HotelOtoSystem
 
 
         }
-
+        /*
         private void button9_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Otel Otomasyon Sistemi / 2023 / Bursa");
         }
-
+        */
         private void FrmAnaFromcs_Load(object sender, EventArgs e)
         {
             timer1.Start();
@@ -105,6 +105,13 @@ namespace HotelOtoSystem
 
         private void label1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Hakkimizda fr = new Hakkimizda();
+            fr.Show();
 
         }
     }

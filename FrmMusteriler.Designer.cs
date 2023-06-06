@@ -115,7 +115,7 @@
             // columnHeader6
             // 
             columnHeader6.Text = "Mail";
-            columnHeader6.Width = 85;
+            columnHeader6.Width = 100;
             // 
             // columnHeader7
             // 
@@ -520,6 +520,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FrmMusteriler";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = " Müşteri Bilgileri";
             Load += FrmMusteriler_Load;
             ResumeLayout(false);

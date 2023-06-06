@@ -332,7 +332,7 @@
             label12.AutoSize = true;
             label12.BackColor = Color.White;
             label12.Font = new Font("Arial Black", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label12.Location = new Point(683, 59);
+            label12.Location = new Point(677, 53);
             label12.Name = "label12";
             label12.Size = new Size(274, 28);
             label12.TabIndex = 24;
@@ -343,7 +343,7 @@
             label13.AutoSize = true;
             label13.BackColor = Color.White;
             label13.Font = new Font("Arial Black", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label13.Location = new Point(727, 103);
+            label13.Location = new Point(721, 97);
             label13.Name = "label13";
             label13.Size = new Size(167, 28);
             label13.TabIndex = 25;
@@ -384,6 +384,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FrmAnaFromcs";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Ana Sayfa";
             Load += FrmAnaFromcs_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
